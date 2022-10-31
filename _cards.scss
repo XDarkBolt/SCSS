@@ -1,7 +1,10 @@
 $cardColor: #F0F2F5;
 
 .neu-card {
-    margin: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
@@ -9,7 +12,7 @@ $cardColor: #F0F2F5;
     background-color: $cardColor;
     border: solid;
     border-radius: 1rem;
-    border-color: #cccccc;
+    border-color: #e0e0e0;
     border-width: 1px 1px 1px 1px;
 
     h1 {
@@ -30,6 +33,10 @@ $cardColor: #F0F2F5;
 }
 
 .neu-card:hover{
-    border-color: #acacac;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 6px;
+    border-color: #cccccc;
     border-width: 1px 5px 5px 1px;
 }
