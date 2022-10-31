@@ -1,0 +1,35 @@
+$cardColor: #F0F2F5;
+
+.neu-card {
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: $cardColor;
+    border: solid;
+    border-radius: 1rem;
+    border-color: #cccccc;
+    border-width: 1px 1px 1px 1px;
+
+    h1 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.neu-card:hover{
+    border-color: #acacac;
+    border-width: 1px 5px 5px 1px;
+}
