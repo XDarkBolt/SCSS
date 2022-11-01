@@ -52,6 +52,35 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+.text-middle {
+  text-align: center;
+}
+
+@-webkit-keyframes header-focus {
+  from {
+    letter-spacing: 3px;
+  }
+  to {
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes header-focus {
+  from {
+    letter-spacing: 3px;
+  }
+  to {
+    letter-spacing: 1px;
+  }
+}
 .neu-card {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -61,11 +90,12 @@ table {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #F0F2F5;
+  background-color: #FFFFFF;
   border: solid;
   border-radius: 1rem;
   border-color: #e0e0e0;
   border-width: 1px 1px 1px 1px;
+  box-shadow: -4px -4px 8px rgba(200, 200, 200, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .neu-card h1 {
   padding-top: 0.5rem;
@@ -74,19 +104,29 @@ table {
   padding-right: 1rem;
   text-align: center;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .neu-card p {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #555555;
 }
 
 .neu-card:hover {
   margin-top: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   margin-left: 10px;
-  margin-right: 6px;
+  margin-right: 9px;
   border-color: #cccccc;
-  border-width: 1px 5px 5px 1px;
+  border-width: 1px 2px 2px 1px;
+}
+.neu-card:hover p {
+  color: #000000;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: #F0F2F5;
 }/*# sourceMappingURL=style.css.map */

@@ -1,2 +1,14 @@
-$mainColor: #FFFFFF;
-$mainFontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+$mainColor: #F0F2F5;
+$mainLightColor: #F0F2F5;
+$mainDarkColor: #282424;
+$mainFontFamily: Montserrat;

@@ -1,42 +1,60 @@
-$cardColor: #F0F2F5;
+$cardColor: #FFFFFF;
+$cardBorderColor: #e0e0e0;
+$cardHoverBorderColor: #cccccc;
+$cardMargin: 10px;
+$cardHoverWidth: 2px;
+$cardBorderWidth: 1px;
 
-.neu-card {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: $cardColor;
+@mixin card-padding ($topPadding: 1rem, $bottomPadding: 1rem, $leftPadding: 2rem, $rightPadding: 2rem) {
+    padding-top: $topPadding;
+    padding-bottom: $bottomPadding;
+    padding-left: $leftPadding;
+    padding-right: $rightPadding;
+}
+
+@mixin card-header {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@mixin card-basic-border {
     border: solid;
     border-radius: 1rem;
-    border-color: #e0e0e0;
-    border-width: 1px 1px 1px 1px;
+}
+
+.neu-card {
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin;
+    margin-left: $cardMargin;
+    margin-right: $cardMargin;
+    @include card-padding();
+    background-color: $cardColor;
+    @include card-basic-border();
+    border-color: $cardBorderColor;
+    border-width: $cardBorderWidth $cardBorderWidth $cardBorderWidth $cardBorderWidth;
+    box-shadow: -4px -4px 8px rgb(200 200 200 / 10%), 4px 4px 8px rgb(0 0 0 / 10%);
 
     h1 {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: center;
-        font-weight: bold;
+        @include card-padding(0.5rem, 0.5rem, 1rem, 1rem);
+        @include card-header();
     }
 
     p {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        @include card-padding(0.25rem, 0.25rem, 0.5rem, 0.5rem);
+        color: #555555;
     }
 }
 
-.neu-card:hover{
-    margin-top: 10px;
-    margin-bottom: 6px;
-    margin-left: 10px;
-    margin-right: 6px;
-    border-color: #cccccc;
-    border-width: 1px 5px 5px 1px;
+.neu-card:hover {
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
+
+    p {
+        color: #000000;
+    }
 }
