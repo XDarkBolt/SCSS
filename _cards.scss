@@ -3,9 +3,18 @@ $cardBorderColor: #e0e0e0;
 $cardHoverBorderColor: #cccccc;
 $cardMargin: 10px;
 $cardHoverWidth: 2px;
-$cardBorderWidth: 1px;
+$cardBorderWidth: 0px;
+$cardHeaderFontSize: 36px;
+$cardFontSize: 24px;
 
-@mixin card-padding ($topPadding: 1rem, $bottomPadding: 1rem, $leftPadding: 2rem, $rightPadding: 2rem) {
+@mixin card-margin {
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin;
+    margin-left: $cardMargin;
+    margin-right: $cardMargin;
+}
+
+@mixin card-padding ($topPadding: 20px, $bottomPadding: 20px, $leftPadding: 40px, $rightPadding: 40px) {
     padding-top: $topPadding;
     padding-bottom: $bottomPadding;
     padding-left: $leftPadding;
@@ -15,34 +24,33 @@ $cardBorderWidth: 1px;
 @mixin card-header {
     text-align: center;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 @mixin card-basic-border {
     border: solid;
-    border-radius: 1rem;
+    border-radius: 15px;
+    border-color: $cardBorderColor;
+    border-width: $cardBorderWidth $cardBorderWidth $cardBorderWidth $cardBorderWidth;
 }
 
 .neu-card {
-    margin-top: $cardMargin;
-    margin-bottom: $cardMargin;
-    margin-left: $cardMargin;
-    margin-right: $cardMargin;
+    @include card-margin();
     @include card-padding();
-    background-color: $cardColor;
     @include card-basic-border();
-    border-color: $cardBorderColor;
-    border-width: $cardBorderWidth $cardBorderWidth $cardBorderWidth $cardBorderWidth;
-    box-shadow: -4px -4px 8px rgb(200 200 200 / 10%), 4px 4px 8px rgb(0 0 0 / 10%);
+    background-color: $cardColor;
+    box-shadow: -2px -2px 4px rgb(0 0 0 / 5%), 8px 8px 16px rgb(0 0 0 / 10%);
 
     h1 {
-        @include card-padding(0.5rem, 0.5rem, 1rem, 1rem);
+        @include card-padding(5px, 5px, 10px, 10px);
         @include card-header();
+        font-size: $cardHeaderFontSize;
     }
 
     p {
-        @include card-padding(0.25rem, 0.25rem, 0.5rem, 0.5rem);
+        @include card-padding(10px, 10px, 30px, 30px);
         color: #555555;
+        font-size: $cardFontSize;
     }
 }
 
