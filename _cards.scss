@@ -48,7 +48,7 @@ $cardFontSize: 24px;
     }
 
     p {
-        @include card-padding(10px, 10px, 30px, 30px);
+        @include card-padding(10px, 10px, 10px, 10px);
         color: #555555;
         font-size: $cardFontSize;
     }
