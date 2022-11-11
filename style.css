@@ -152,8 +152,8 @@ table {
   border-radius: 15px;
   border-color: #e0e0e0;
   border-width: 0px 0px 0px 0px;
-  background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -188,10 +188,16 @@ table {
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(13px);
           backdrop-filter: blur(13px);
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 8px;
+  border-color: #cccccc;
+  border-width: 0px 2px 2px 0px;
 }
 .glass-card:hover p {
   color: #000000;
@@ -201,5 +207,5 @@ body {
   font-family: Montserrat;
   height: 100vh;
   /* background-color: $mainColor; */
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(to right top, #d16b6b, #d87a6b, #dd8a6e, #e19972, #e4a979, #e8b378, #ebbe77, #ebc977, #e8d46c, #e0e064, #d2ed5f, #befb5f);
 }/*# sourceMappingURL=style.css.map */

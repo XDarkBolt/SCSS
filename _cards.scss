@@ -83,8 +83,8 @@ $cardFontSize: 24px;
     @include card-margin();
     @include card-padding();
     @include card-basic-border();
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
 
     h1 {
@@ -113,9 +113,15 @@ $cardFontSize: 24px;
 }
 
 .glass-card:hover {
-    background: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(13px);
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
 
     p {
         color: #000000;
