@@ -127,3 +127,9 @@ $cardFontSize: 24px;
         color: #000000;
     }
 }
+
+.plane-basic{
+    @include card-margin();
+    @include card-basic-border();
+    background-color: #EEEEEE;
+}
