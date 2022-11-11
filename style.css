@@ -219,6 +219,5 @@ body {
   font-family: Montserrat;
   height: 100vh;
   /* background-color: $mainColor; */
-  /* background-image: linear-gradient(to right top, #d16b6b, #d87a6b, #dd8a6e, #e19972, #e4a979, #e8b378, #ebbe77, #ebc977, #e8d46c, #e0e064, #d2ed5f, #befb5f); */
-  background-image: linear-gradient(to right top, #818181, #979797, #aeaeae, #c6c6c6, #dedede, #dedede, #dedede, #dedede, #c6c6c6, #aeaeae, #979797, #818181);
+  background-image: linear-gradient(to right top, #d16b6b, #d87a6b, #dd8a6e, #e19972, #e4a979, #e8b378, #ebbe77, #ebc977, #e8d46c, #e0e064, #d2ed5f, #befb5f);
 }/*# sourceMappingURL=style.css.map */
