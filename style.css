@@ -115,6 +115,17 @@ table {
   color: #555555;
   font-size: 24px;
 }
+.neu-card img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+}
 
 .neu-card:hover {
   margin-top: 10px;
@@ -128,7 +139,67 @@ table {
   color: #000000;
 }
 
+.glass-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: solid;
+  border-radius: 15px;
+  border-color: #e0e0e0;
+  border-width: 0px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.glass-card h1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 36px;
+}
+.glass-card p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #555555;
+  font-size: 24px;
+}
+.glass-card img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+}
+.glass-card:hover p {
+  color: #000000;
+}
+
 body {
   font-family: Montserrat;
-  background-color: #F0F2F5;
+  height: 100vh;
+  /* background-color: $mainColor; */
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }/*# sourceMappingURL=style.css.map */
