@@ -13,18 +13,32 @@ $mainLightColor: #F0F2F5;
 $mainDarkColor: #282424;
 $mainFontFamily: Montserrat;
 
+$colorSidebar: #0e0e23;
+
+$colorNeuCard: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+$colorNeuCardFontH: #e7e8ea;
+$colorNeuCardFontP: #9b9ca7;
+
 $colorPrestige: #0e0e23;
+$colorPrestigeDark: #05031A;
 $colorPrestigeBlue: #4255d4;
 $colorPrestigeRed: #ef415c;
 $colorPrestigeYellow: #EF8741;
 $colorPrestigeHeader: #10122b;
 $colorPrestigeCard: radial-gradient(circle, #1a2049 0%, #13162f 100%);
 $prestigeFontFamily: "Inter", sans-serif;
-$colorPrestigeFontColor: #9b9ca7;
-$colorPrestigeFontColorFocus: #e7e8ea;
+$colorPrestigeFontColorPrimary: #e7e8ea;
+$colorPrestigeFontColorSecondary: #9b9ca7;
 $colorPrestigeFontColorDanger: #d14b69;
 $colorPrestigeFontColorDangerFocus: #e85471;
 $colorPrestigeFontColorActive: #1aa385;
 $colorPrestigeFontColorActiveFocus: #17a98a;
 $colorPrestigeFontColorBlue: #3E4EC2;
 $colorPrestigeFontColorBlueFocus: #3e50c5;
+
+$colorLight: #EDF5FF;
+$colorLightCard: #FFFFFF;
+$colorLightCardBorder: #C7E0FF;
+$colorLightBlue: #3B82F6;
+$colorLightFontColorPrimary: #191919;
+$colorLightFontColorSecondary: #73879E;

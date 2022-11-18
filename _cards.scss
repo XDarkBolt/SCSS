@@ -38,18 +38,21 @@ $cardFontSize: 24px;
     @include card-margin();
     @include card-padding();
     @include card-basic-border();
-    background-color: $cardColor;
+    border-width: 1px 2px 2px 1px;
+    border-color: #1a204980;
+    background: $colorNeuCard;
     box-shadow: -2px -2px 4px rgb(0 0 0 / 5%), 8px 8px 16px rgb(0 0 0 / 10%);
 
     h1 {
         @include card-padding(5px, 5px, 10px, 10px);
         @include card-header();
         font-size: $cardHeaderFontSize;
+        color: $colorNeuCardFontH;
     }
 
     p {
         @include card-padding(10px, 10px, 10px, 10px);
-        color: #555555;
+        color: $colorNeuCardFontP;
         font-size: $cardFontSize;
     }
 
@@ -63,10 +66,13 @@ $cardFontSize: 24px;
         max-width: 300px;
         max-height: 300px;
         border-radius: 20px;
+        border: solid;
+        border-color: #cccccc;
+        border-width: 2px 3px 3px 2px;
     }
 }
 
-.neu-card:hover {
+/*.neu-card:hover {
     margin-top: $cardMargin;
     margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
     margin-left: $cardMargin;
@@ -77,26 +83,29 @@ $cardFontSize: 24px;
     p {
         color: #000000;
     }
-}
+}*/
 
 .glass-card {
     @include card-margin();
     @include card-padding();
     @include card-basic-border();
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    border-width: 1px 2px 2px 1px;
+    border-color: #ffffff05;
+    background: radial-gradient(circle, #13162f80 0%, #1a204980 100%);
+    box-shadow: -2px -2px 4px #05031A0D, 5px 5px 10px #05031A1A;
     backdrop-filter: blur(10px);
 
     h1 {
         @include card-padding(5px, 5px, 10px, 10px);
         @include card-header();
         font-size: $cardHeaderFontSize;
+        color: $colorNeuCardFontH;
     }
 
     p {
         @include card-padding(10px, 10px, 10px, 10px);
-        color: #555555;
         font-size: $cardFontSize;
+        color: $colorNeuCardFontP;
     }
 
     img {
@@ -109,10 +118,13 @@ $cardFontSize: 24px;
         max-width: 300px;
         max-height: 300px;
         border-radius: 20px;
+        border: solid;
+        border-color: #cccccc;
+        border-width: 2px 3px 3px 2px;
     }
 }
 
-.glass-card:hover {
+/*.glass-card:hover {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(13px);
@@ -126,7 +138,7 @@ $cardFontSize: 24px;
     p {
         color: #000000;
     }
-}
+}*/
 
 .plane-basic{
     @include card-margin();

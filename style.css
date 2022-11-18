@@ -64,6 +64,53 @@ table {
   text-align: center;
 }
 
+.content-basic {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #0e0e23;
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 20px;
+  background: repeating-linear-gradient(45deg, #1a2049, #1a2049 10px, #0e0e23 10px, #0e0e23 40px);
+}
+
+.navbar-basic {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  background-color: #0e0e23;
+  width: 100%;
+  height: 100px;
+}
+
+.sidebar-basic {
+  z-index: 99;
+  position: fixed;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0e0e23;
+  width: 10%;
+  height: 100%;
+}
+.sidebar-basic i {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  stroke-width: 1px;
+}
+
+.mainpage-basic {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 10%;
+}
+
 @-webkit-keyframes header-focus {
   from {
     letter-spacing: 3px;
@@ -94,7 +141,9 @@ table {
   border-radius: 15px;
   border-color: #e0e0e0;
   border-width: 0px 0px 0px 0px;
-  background-color: #FFFFFF;
+  border-width: 1px 2px 2px 1px;
+  border-color: rgba(26, 32, 73, 0.5019607843);
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05), 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
 .neu-card h1 {
@@ -106,13 +155,14 @@ table {
   font-weight: bold;
   letter-spacing: 0.1rem;
   font-size: 36px;
+  color: #e7e8ea;
 }
 .neu-card p {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #555555;
+  color: #9b9ca7;
   font-size: 24px;
 }
 .neu-card img {
@@ -125,20 +175,23 @@ table {
   max-width: 300px;
   max-height: 300px;
   border-radius: 20px;
-}
-
-.neu-card:hover {
-  margin-top: 10px;
-  margin-bottom: 8px;
-  margin-left: 10px;
-  margin-right: 8px;
+  border: solid;
   border-color: #cccccc;
-  border-width: 0px 2px 2px 0px;
-}
-.neu-card:hover p {
-  color: #000000;
+  border-width: 2px 3px 3px 2px;
 }
 
+/*.neu-card:hover {
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
+
+    p {
+        color: #000000;
+    }
+}*/
 .glass-card {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -152,8 +205,10 @@ table {
   border-radius: 15px;
   border-color: #e0e0e0;
   border-width: 0px 0px 0px 0px;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+  border-width: 1px 2px 2px 1px;
+  border-color: rgba(255, 255, 255, 0.0196078431);
+  background: radial-gradient(circle, rgba(19, 22, 47, 0.5019607843) 0%, rgba(26, 32, 73, 0.5019607843) 100%);
+  box-shadow: -2px -2px 4px rgba(5, 3, 26, 0.0509803922), 5px 5px 10px rgba(5, 3, 26, 0.1019607843);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -166,14 +221,15 @@ table {
   font-weight: bold;
   letter-spacing: 0.1rem;
   font-size: 36px;
+  color: #e7e8ea;
 }
 .glass-card p {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #555555;
   font-size: 24px;
+  color: #9b9ca7;
 }
 .glass-card img {
   margin-top: 10px;
@@ -185,24 +241,26 @@ table {
   max-width: 300px;
   max-height: 300px;
   border-radius: 20px;
-}
-
-.glass-card:hover {
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(13px);
-          backdrop-filter: blur(13px);
-  margin-top: 10px;
-  margin-bottom: 8px;
-  margin-left: 10px;
-  margin-right: 8px;
+  border: solid;
   border-color: #cccccc;
-  border-width: 0px 2px 2px 0px;
-}
-.glass-card:hover p {
-  color: #000000;
+  border-width: 2px 3px 3px 2px;
 }
 
+/*.glass-card:hover {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(13px);
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
+
+    p {
+        color: #000000;
+    }
+}*/
 .plane-basic {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -217,7 +275,5 @@ table {
 
 body {
   font-family: Montserrat;
-  height: 100vh;
-  /* background-color: $mainColor; */
-  background-image: linear-gradient(to right top, #d16b6b, #d87a6b, #dd8a6e, #e19972, #e4a979, #e8b378, #ebbe77, #ebc977, #e8d46c, #e0e064, #d2ed5f, #befb5f);
+  background-color: #0e0e23;
 }/*# sourceMappingURL=style.css.map */
