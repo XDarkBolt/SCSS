@@ -64,22 +64,29 @@ table {
   text-align: center;
 }
 
+.mainpage-basic {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 10%;
+}
+
 .content-basic {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: #0e0e23;
+  background-color: rgb(58, 58, 60);
   width: 100%;
   margin-top: 100px;
   border-radius: 20px;
-  background: repeating-linear-gradient(45deg, #1a2049, #1a2049 10px, #0e0e23 10px, #0e0e23 40px);
 }
 
 .navbar-basic {
   z-index: 99;
   position: fixed;
   top: 0;
-  background-color: #0e0e23;
+  background-color: rgb(12, 12, 14);
   width: 100%;
   height: 100px;
 }
@@ -91,7 +98,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0e0e23;
+  background-color: rgb(12, 12, 14);
   width: 10%;
   height: 100%;
 }
@@ -103,21 +110,13 @@ table {
   stroke-width: 1px;
 }
 
-.mainpage-basic {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-  margin-left: 10%;
-}
-
-@-webkit-keyframes header-focus {
-  from {
-    letter-spacing: 3px;
-  }
-  to {
-    letter-spacing: 1px;
-  }
+.overlay-glass {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(12, 12, 14, 0.9);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 @keyframes header-focus {
@@ -128,6 +127,49 @@ table {
     letter-spacing: 1px;
   }
 }
+/*.neu-card:hover {
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
+
+    p {
+        color: #000000;
+    }
+}*/
+/*.glass-card:hover {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(13px);
+    margin-top: $cardMargin;
+    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    margin-left: $cardMargin;
+    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
+    border-color: $cardHoverBorderColor;
+    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
+
+    p {
+        color: #000000;
+    }
+}*/
+.basic-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  /*border: solid;*/
+  /*border-color: $cardBorderColor;*/
+  border-radius: 10px;
+  border-width: 0px 0px 0px 0px;
+  background-color: rgb(242, 242, 247);
+}
+
 .neu-card {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -137,14 +179,12 @@ table {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  border: solid;
-  border-radius: 15px;
-  border-color: #e0e0e0;
+  /*border: solid;*/
+  /*border-color: $cardBorderColor;*/
+  border-radius: 10px;
   border-width: 0px 0px 0px 0px;
-  border-width: 1px 2px 2px 1px;
-  border-color: rgba(26, 32, 73, 0.5019607843);
-  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
-  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05), 8px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: rgb(209, 209, 214);
+  box-shadow: inset -5px -5px 10px rgb(242, 242, 247), inset 5px 5px 10px rgba(142, 142, 147, 0.3), -5px -5px 10px rgba(242, 242, 247, 0.2), 5px 5px 10px rgba(12, 12, 14, 0.3);
 }
 .neu-card h1 {
   padding-top: 5px;
@@ -180,18 +220,6 @@ table {
   border-width: 2px 3px 3px 2px;
 }
 
-/*.neu-card:hover {
-    margin-top: $cardMargin;
-    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
-    margin-left: $cardMargin;
-    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
-    border-color: $cardHoverBorderColor;
-    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
-
-    p {
-        color: #000000;
-    }
-}*/
 .glass-card {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -201,14 +229,14 @@ table {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  border: solid;
-  border-radius: 15px;
-  border-color: #e0e0e0;
+  /*border: solid;*/
+  /*border-color: $cardBorderColor;*/
+  border-radius: 10px;
   border-width: 0px 0px 0px 0px;
   border-width: 1px 2px 2px 1px;
   border-color: rgba(255, 255, 255, 0.0196078431);
-  background: radial-gradient(circle, rgba(19, 22, 47, 0.5019607843) 0%, rgba(26, 32, 73, 0.5019607843) 100%);
-  box-shadow: -2px -2px 4px rgba(5, 3, 26, 0.0509803922), 5px 5px 10px rgba(5, 3, 26, 0.1019607843);
+  background-color: rgba(242, 242, 247, 0.3);
+  box-shadow: inset -10px -10px 20px rgba(142, 142, 147, 0.1), inset 10px 10px 20px rgba(142, 142, 147, 0.1), -5px -5px 10px rgba(142, 142, 147, 0.1), 5px 5px 10px rgba(142, 142, 147, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -246,34 +274,10 @@ table {
   border-width: 2px 3px 3px 2px;
 }
 
-/*.glass-card:hover {
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(13px);
-    margin-top: $cardMargin;
-    margin-bottom: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
-    margin-left: $cardMargin;
-    margin-right: $cardMargin - ($cardHoverWidth - $cardBorderWidth);
-    border-color: $cardHoverBorderColor;
-    border-width: $cardBorderWidth $cardHoverWidth $cardHoverWidth $cardBorderWidth;
-
-    p {
-        color: #000000;
-    }
-}*/
-.plane-basic {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: solid;
-  border-radius: 15px;
-  border-color: #e0e0e0;
-  border-width: 0px 0px 0px 0px;
-  background-color: #EEEEEE;
-}
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   font-family: Montserrat;
-  background-color: #0e0e23;
+  background-color: rgb(12, 12, 14);
 }/*# sourceMappingURL=style.css.map */

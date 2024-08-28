@@ -1,10 +1,15 @@
 @import './reset';
 @import './variables';
+@import './colors';
 @import './layouts';
 @import './animations';
 @import './cards';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
     font-family: $mainFontFamily;
-    background-color: $colorPrestige;
+    background-color: gray(0,1);
 }

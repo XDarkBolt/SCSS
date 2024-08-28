@@ -12,28 +12,25 @@
 </head>
 
 <body>
-    <div style="display: flex;">
-        <div class="sidebar-basic">
+        <div id="sidebar" class="absolute inset-y-0 left-0 w-16 flex flex-col">
             <i class="fa-solid fa-fingerprint" style="font-size: 50px; color: white;"></i>
             <i class="fa-solid fa-fingerprint" style="font-size: 50px; color: white;"></i>
             <i class="fa-solid fa-fingerprint" style="font-size: 50px; color: white; position:fixed; bottom: 0px;"></i>
         </div>
         <div class="mainpage-basic">
-            <div class="navbar-basic"></div>
+            <div id="navbar" class="absolute inset-x-0 top-0 h-16">TEST</div>
             <div class="content-basic">
-                <div class="neu-card" style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-                    <h1 id="header">CATS</h1>
-                    <img id="img" src="" alt="">
-                    <p id="description"></p>
-                </div>
-                <div class="glass-card" style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-                    <h1 id="header">CATS</h1>
-                    <img id="img2" src="" alt="">
-                    <p id="description2"></p>
-                </div>
+                <div class="basic-card" style="width: 400px; height: 50px;"></div>
+                <div class="neu-card" style="width: 400px; height: 50px;"></div>
+                <div class="glass-card" style="width: 400px; height: 50px;"></div>
+            </div>
+            <div class="content-basic">
+                <div class="overlay-glass" style="z-index: 99;"></div>
+                <div class="basic-card" style="width: 400px; height: 50px;"></div>
+                <div class="neu-card" style="width: 400px; height: 50px;"></div>
+                <div class="glass-card" style="width: 400px; height: 50px;"></div>
             </div>
         </div>
-    </div>
 </body>
 
 <script src="./myscript.js"></script>

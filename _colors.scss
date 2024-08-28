@@ -1,0 +1,181 @@
+$cardColor: #FFFFFF;
+$cardBorderColor: #e0e0e0;
+$cardHoverBorderColor: #cccccc;
+
+@function gray($index, $alpha) {
+    $color: rgba(0, 0, 0, 0);
+
+    @if $index ==0 {
+        $color: rgba(12, 12, 14, $alpha);
+    }
+
+    @else if $index ==1 {
+        $color: rgba(28, 28, 30, $alpha);
+    }
+
+    @else if $index ==2 {
+        $color: rgba(44, 44, 46, $alpha);
+    }
+
+    @else if $index ==3 {
+        $color: rgba(58, 58, 60, $alpha);
+    }
+
+    @else if $index ==4 {
+        $color: rgba(72, 72, 74, $alpha);
+    }
+
+    @else if $index ==5 {
+        $color: rgba(99, 99, 102, $alpha);
+    }
+
+    @else if $index ==6 {
+        $color: rgba(142, 142, 147, $alpha);
+    }
+
+    @else if $index ==7 {
+        $color: rgba(152, 152, 157, $alpha);
+    }
+
+    @else if $index ==8 {
+        $color: rgba(174, 174, 178, $alpha);
+    }
+
+    @else if $index ==9 {
+        $color: rgba(199, 199, 204, $alpha);
+    }
+
+    @else if $index ==10 {
+        $color: rgba(209, 209, 214, $alpha);
+    }
+
+    @else if $index ==11 {
+        $color: rgba(229, 229, 234, $alpha);
+    }
+
+    @else if $index ==12 {
+        $color: rgba(242, 242, 247, $alpha);
+    }
+
+    @else {
+        @error "Unknown color index #{$index}.";
+    }
+
+    @return change-color($color);
+}
+
+@function colorDark($colorText, $alpha) {
+    $color: rgba(0, 0, 0, 0);
+
+    @if $colorText =="red" {
+        $color: rgba(255, 69, 58, $alpha);
+    }
+
+    @else if $colorText =="orange" {
+        $color: rgba(255, 159, 10, $alpha);
+    }
+
+    @else if $colorText =="yellow" {
+        $color: rgba(255, 214, 10, $alpha);
+    }
+
+    @else if $colorText =="green" {
+        $color: rgba(48, 209, 88, $alpha);
+    }
+
+    @else if $colorText =="mint" {
+        $color: rgba(99, 230, 226, $alpha);
+    }
+
+    @else if $colorText =="teal" {
+        $color: rgba(64, 200, 224, $alpha);
+    }
+
+    @else if $colorText =="cyan" {
+        $color: rgba(100, 210, 255, $alpha);
+    }
+
+    @else if $colorText =="blue" {
+        $color: rgba(10, 132, 255, $alpha);
+    }
+
+    @else if $colorText =="indigo" {
+        $color: rgba(94, 92, 230, $alpha);
+    }
+
+    @else if $colorText =="purple" {
+        $color: rgba(191, 90, 242, $alpha);
+    }
+
+    @else if $colorText =="pink" {
+        $color: rgba(255, 55, 95, $alpha);
+    }
+
+    @else if $colorText =="brown" {
+        $color: rgba(172, 142, 104, $alpha);
+    }
+
+    @else {
+        @error "Unknown dark theme color name #{$colorText}.";
+    }
+
+    @return change-color($color);
+}
+
+@function colorLight($colorText, $alpha) {
+    $color: rgba(0, 0, 0, 0);
+
+    @if $colorText =="red" {
+        $color: rgba(255, 59, 48, $alpha);
+    }
+
+    @else if $colorText =="orange" {
+        $color: rgba(255, 149, 0, $alpha);
+    }
+
+    @else if $colorText =="yellow" {
+        $color: rgba(255, 204, 0, $alpha);
+    }
+
+    @else if $colorText =="green" {
+        $color: rgba(52, 199, 89, $alpha);
+    }
+
+    @else if $colorText =="mint" {
+        $color: rgba(0, 199, 190, $alpha);
+    }
+
+    @else if $colorText =="teal" {
+        $color: rgba(48, 176, 199, $alpha);
+    }
+
+    @else if $colorText =="cyan" {
+        $color: rgba(50, 173, 230, $alpha);
+    }
+
+    @else if $colorText =="blue" {
+        $color: rgba(0, 122, 255, $alpha);
+    }
+
+    @else if $colorText =="indigo" {
+        $color: rgba(88, 86, 214, $alpha);
+    }
+
+    @else if $colorText =="purple" {
+        $color: rgba(175, 82, 222, $alpha);
+    }
+
+    @else if $colorText =="pink" {
+        $color: rgba(255, 45, 85, $alpha);
+    }
+
+    @else if $colorText =="brown" {
+        $color: rgba(162, 132, 94, $alpha);
+    }
+
+    @else {
+        @error "Unknown light theme color name #{$colorText}.";
+    }
+
+    @return change-color($color);
+}
